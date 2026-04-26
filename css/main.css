@@ -1,0 +1,159 @@
+:root {
+  --bodycolour: #353535;
+  --boxcolour: white;
+  --titlebackground: #c4e824;
+  --titletextcolour: rgb(255, 255, 255);
+  --border-radius: 30px;
+  --loginboxcolour: #c4e824;
+  --loginbuttonheight: 40px;
+  --tablecolour1: #a3c723;
+  --tablecolour2: #c4e824;
+
+}
+
+body{
+    background-color: var(--bodycolour);
+
+   font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.box{
+    background-color: var(--boxcolour);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: var(--border-radius);
+    padding-bottom: 20px;
+}
+
+#title {
+    background-color: var(--titlebackground);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 48px;
+    color: var(--boxcolour);
+    border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+}
+
+#title h1{
+color: var(--titletextcolour);
+}
+.box p{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    font-size: 16px;
+}
+
+.box img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.loginbox{
+    width: 80%;
+    background-color: var(--loginboxcolour);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--border-radius);
+    padding: 20px;
+}
+
+.loginbox form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.loginbox input{
+    border-radius: 20px;
+}
+
+.loginbox #submit{
+    height: var(--loginbuttonheight);
+}
+
+.stocktable{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--tablecolour1);
+    margin-top: 20px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    
+}
+
+.stocktable table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    text-align: center;
+    table-layout:fixed;
+}
+
+.stocktable img{
+    width: 160px;
+    margin:0;}
+.stocktable th, .stocktable td{
+    padding: 15px;
+}
+
+.stocktable th{
+    font-size: 20px
+}
+
+
+.stocktable tr:nth-child(even) td {
+    background-color: var(--tablecolour2);
+}
+
+.loginmenu{
+    background-color: #a3c723;
+    width: 85%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: var(--border-radius);
+    padding: 10px 0px 10px 0px;
+}
+
+.loginmenu button{
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+    width: 40%;
+    background-color: #c4e824;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.loginmenu button:hover{
+    background-color: rgb(218, 241, 10);
+}
