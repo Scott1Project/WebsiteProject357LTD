@@ -36,21 +36,22 @@ $events = $stmt->fetchAll();
 <head>
     <meta charset="UTF-8">
     <title>Events | 357 LTD</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css">
+
 </head>
 <body>
 
-<h1>Upcoming Events</h1>
-
+<div class="box">
+<h1 id="title">Upcoming Events</h1>
 <div class="events-container">
 
 <?php if (count($events) > 0): ?>
     <?php foreach ($events as $event): ?>
 
         <div class="event-card">
-            <h2><?php echo htmlspecialchars($event["Event_Title"]); ?></h2>
+            <h1 id="title"><?php echo htmlspecialchars($event["Event_Title"]); ?></h1>
 
-            <img src="images/<?php echo htmlspecialchars($event["Event_Image"]); ?>"
+            <img src="<?php echo htmlspecialchars($event["Event_Image"]); ?>"
                  alt="<?php echo htmlspecialchars($event["Event_AltText"]); ?>">
 
             <p><?php echo htmlspecialchars($event["Event_Description"]); ?></p>
@@ -60,6 +61,8 @@ $events = $stmt->fetchAll();
 <?php else: ?>
     <p>No events available.</p>
 <?php endif; ?>
+
+</div>
 
 </div>
 
