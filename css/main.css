@@ -2,7 +2,7 @@
   --bodycolour: #353535;
   --boxcolour: #ececec;
   --titlebackground: #c4e824;
-  --titletextcolour: #ececec;
+  --titletextcolour: #000000;
   --border-radius: 30px;
   --loginboxcolour: #c4e824;
   --loginbuttonheight: 40px;
@@ -80,10 +80,7 @@ body{
     font-size: 48px;
     color: var(--boxcolour);
     border-radius: var(--border-radius) var(--border-radius) 0px 0px;
-}
-
-#title h1{
-color: var(--titletextcolour);
+    color: var(--titletextcolour);
 }
 .box p{
     width: 90%;
@@ -98,6 +95,7 @@ color: var(--titletextcolour);
     margin-right: auto;
     display: block;
 }
+
 
 
 .loginbox{
