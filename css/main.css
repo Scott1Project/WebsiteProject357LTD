@@ -1,14 +1,55 @@
 :root {
   --bodycolour: #353535;
-  --boxcolour: white;
+  --boxcolour: #ececec;
   --titlebackground: #c4e824;
-  --titletextcolour: rgb(255, 255, 255);
+  --titletextcolour: #ececec;
   --border-radius: 30px;
   --loginboxcolour: #c4e824;
   --loginbuttonheight: 40px;
   --tablecolour1: #a3c723;
   --tablecolour2: #c4e824;
+  --navbarcolour1: #c4e824;
+  --navbarcolour2: #ececec;
 
+}
+
+.navbar img{
+    max-width: 300px;
+    display: block;
+    border-radius: var(--border-radius);
+}
+
+.navbar{
+    max-width: 1000px;
+    background-color: var(--navbarcolour1);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--border-radius);
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--navbarcolour2);
+  border-radius: 0px 0px var(--border-radius) var(--border-radius);
+}
+
+.navbar ul li {
+  float: left;
+}
+
+.navbar ul li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  background-color: #d3d2d2;
 }
 
 body{
