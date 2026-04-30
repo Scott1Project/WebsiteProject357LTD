@@ -198,11 +198,11 @@ body{
 }
 
 .events-container{
-background-color: rgb(206, 206, 206);
 border-radius: var(--border-radius);
 width: 80%;
 margin-left: auto;
 margin-right: auto;
+border-radius: var(--border-radius);
 border-radius: var(--border-radius);
 }
 
@@ -212,10 +212,15 @@ border-radius: var(--border-radius);
     text-align: center;
     background-color: #a3c723;
     width: 100%;
-    border-radius: 0px 0px var(--border-radius) var(--bodycolour);
 }
 
 
 .events-container p{
     padding-bottom: 20px;
+}
+
+.event-card{
+    margin-top: 20px;
+    background-color: rgb(206, 206, 206);
+    border-radius: var(--border-radius);
 }
