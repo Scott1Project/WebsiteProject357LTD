@@ -1,25 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="box">
-        <h1 id="title">title</h1>
-        <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
-
-        
-    </div>
-</body>
-</html> -->
-
-
 <?php
 require_once "db.php";
 
