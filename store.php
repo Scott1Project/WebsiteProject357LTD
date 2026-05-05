@@ -19,7 +19,7 @@ $stock = $stmt->fetchAll();
 <body>
 
 <div class="navbar">
-  <img src="img/logo.png">
+  <img src="img/logo.png" alt="357 LTD Logo">
 <ul>
   <li><a href="index.html">Home</a></li>
   <li><a href="event.php">Events</a></li>
@@ -50,8 +50,7 @@ $stock = $stmt->fetchAll();
                         <td><?= number_format($item['Cost'], 2) ?></td>
                         <td>
                             <img src="<?= htmlspecialchars($item['Image']) ?>"
-                                 alt="<?= htmlspecialchars($item['Alt_text']) ?>"
-                                 style="width:100px;">
+                                 alt="<?= htmlspecialchars($item['Alt_text']) ?>">
                         </td>
                     </tr>
                 <?php endforeach; ?>
