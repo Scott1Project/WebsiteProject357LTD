@@ -129,7 +129,7 @@ body{
     height: var(--loginbuttonheight);
 }
 
-.stocktable{
+.stock-table{
     width: 85%;
     margin-left: auto;
     margin-right: auto;
@@ -137,10 +137,11 @@ body{
     margin-top: 20px;
     border-radius: var(--border-radius);
     overflow: hidden;
+    text-align: center;
     
 }
 
-.stocktable table{
+.stock-table table{
     width: 100%;
     border-collapse: collapse;
     text-align: center;
@@ -148,21 +149,34 @@ body{
     table-layout:fixed;
 }
 
-.stocktable img{
+.stock-table img{
     width: 160px;
     margin:0;}
-.stocktable th, .stocktable td{
+.stock-table th, .stocktable td{
     padding: 15px;
 }
 
-.stocktable th{
+.stock-table th{
     font-size: 20px
 }
 
 
-.stocktable tr:nth-child(even) td {
+.stock-table tr:nth-child(even) td {
     background-color: var(--tablecolour2);
 }
+
+
+
+.stock-table img {
+    width: 80%;
+    max-width: 160px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+
 
 .loginmenu{
     background-color: #a3c723;
@@ -234,3 +248,10 @@ border-radius: var(--border-radius);
     .navbar{font-size: 18px;}
     
 }
+
+/* .stock-table{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+} */
