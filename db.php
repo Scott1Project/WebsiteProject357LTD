@@ -1,3 +1,5 @@
+<!-- Connects to database -->
+
 <?php
 $host = "localhost";
 $dbname = "in21006285";
