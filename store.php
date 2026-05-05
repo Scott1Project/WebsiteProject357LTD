@@ -18,6 +18,15 @@ $stock = $stmt->fetchAll();
 </head>
 <body>
 
+<div class="navbar">
+  <img src="img/logo.png">
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="event.php">Events</a></li>
+  <li><a href="store.php">Store</a></li></li>
+</ul>
+</div>
+
 <div class="box">
     <h1 id="title">Store Stock</h1>
 
