@@ -95,6 +95,8 @@ body{
 
 .box img{
     margin-left: auto;
+    width: 80%;
+    max-width: 800px;
     margin-right: auto;
     display: block;
 }
@@ -226,4 +228,9 @@ border-radius: var(--border-radius);
     margin-top: 20px;
     background-color: rgb(206, 206, 206);
     border-radius: var(--border-radius);
+}
+
+@media screen and (max-width: 500px) {
+    .navbar{font-size: 18px;}
+    
 }
