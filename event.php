@@ -1,7 +1,7 @@
 <?php
 require_once "db.php";
 
-$sql = "SELECT Event_Title, Event_Description, Event_Image, Event_AltText 
+$sql = "SELECT Event_Title, Event_Description, Event_Image, Event_AltText, Event_Date 
         FROM EVENTS357";
 
 $stmt = $pdo->prepare($sql);
@@ -31,6 +31,8 @@ $events = $stmt->fetchAll();
 
             <img src="<?php echo htmlspecialchars($event["Event_Image"]); ?>"
                  alt="<?php echo htmlspecialchars($event["Event_AltText"]); ?>">
+
+            <h2 id="EventDate"><?php echo htmlspecialchars($event["Event_Date"]); ?></h2>
 
             <p><?php echo htmlspecialchars($event["Event_Description"]); ?></p>
         </div>

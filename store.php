@@ -20,11 +20,11 @@ $stock = $stmt->fetchAll();
 
 <div class="navbar">
   <img src="img/logo.png" alt="357 LTD Logo">
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="event.php">Events</a></li>
-  <li><a href="store.php">Store</a></li></li>
-</ul>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="event.php">Events</a></li>
+    <li><a href="store.php">Store</a></li></li>
+    </ul>
 </div>
 
 <div class="box">
