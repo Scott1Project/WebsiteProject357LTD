@@ -1,5 +1,5 @@
 <?php
-require_once "db.php";
+require_once "db_con.php";
 
 $sql = "SELECT Event_Title, Event_Description, Event_Image, Event_AltText, Event_Date 
         FROM EVENTS357";

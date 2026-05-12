@@ -1,5 +1,13 @@
 <?php
-require_once "db.php";
+session_start();
+
+// Check if user is logged in
+if(!isset($_SESSION['myusername'])){
+    header("Location: login.php");
+    exit;
+}
+
+require_once "db_con.php";
 
 $sql = "SELECT Stock_ID, Name, Description, Cost, Image, Alt_text 
         FROM STOCK357";

@@ -2,6 +2,7 @@
 <html>
 <head>
     <script src="login.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/login.css">
 	<link rel="stylesheet" href="css/colors.css">
 	<link rel="stylesheet" href="css/title.css">
@@ -11,19 +12,27 @@
 
 <body>
 
+<div class="navbar">
+  <img src="img/logo.png" alt="357 LTD Logo">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="event.php">Events</a></li>
+    <li><a href="store.php">Store</a></li>
+  </ul>
+</div>
+
+<div class="box">
 
 <div class="logotitle">
-<table>
 
-<td><img src="img/uhi_logo_low.png" alt="UHI logo"></td>
-<td><h1>WaterSports Club</h1></td>
 
-</table>
+<h1 id="title">Account Login</h1>
+
 
 
 </div>
 
-<div class="memberform">
+<div class="loginbox">
 <form name="userForm" method="post" action="checklogin.php" id='loginform' onsubmit="return validateUser() && validatePass();">
 
 	<table>
@@ -46,6 +55,7 @@
 </form>
 </table>
 </div>
+
 </div>
 </body>
 </html>
