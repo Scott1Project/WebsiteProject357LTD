@@ -35,25 +35,23 @@
 <div class="loginbox">
 <form name="userForm" method="post" action="checklogin.php" id='loginform' onsubmit="return validateUser() && validatePass();">
 
-	<table>
-	<tr>
-	<td colspan='3'><strong><h2>Member Login</h2></strong></td>
-	</tr>
-	<tr>
-	<td><h1>Username</h1></td>
-	<td><input name='User' type='text'><div id='errorUser' style='color: red;'></div></td>
-	</tr>
-	<tr>
-	<td><h1>Password</h1></td>
-	<td><input name='Pass' type='password'><div id='errorPassword'style='color: red;'></div></td>
-	</tr>
-	<tr>
-    <td colspan="2" style="text-align: center;">
-        <input type="submit" name="Submit" value="Login" id="LoginButton">
-    </td>
-</tr>
+	<h2>Member Login</h2>
+	
+	<div class="form-group">
+		<label for="User">Username</label>
+		<input id="User" name='User' type='text' placeholder="Enter your username" required>
+		<div id='errorUser' style='color: red; font-size: 14px;'></div>
+	</div>
+
+	<div class="form-group">
+		<label for="Pass">Password</label>
+		<input id="Pass" name='Pass' type='password' placeholder="Enter your password" required>
+		<div id='errorPassword' style='color: red; font-size: 14px;'></div>
+	</div>
+
+	<button type="submit" name="Submit" id="LoginButton">Login</button>
+	
 </form>
-</table>
 </div>
 
 </div>

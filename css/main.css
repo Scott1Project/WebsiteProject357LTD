@@ -261,3 +261,58 @@ border-radius: var(--border-radius);
     color: #525252;
     font: 12px;
 }
+
+/* Form styling */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.loginbox label {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+}
+
+.loginbox input[type="text"],
+.loginbox input[type="password"] {
+    padding: 12px 15px;
+    border: 2px solid #a3c723;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: "JetBrains Mono", monospace;
+    transition: all 0.3s ease;
+}
+
+.loginbox input[type="text"]:focus,
+.loginbox input[type="password"]:focus {
+    outline: none;
+    border-color: #353535;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+#LoginButton {
+    padding: 12px 32px;
+    background-color: var(--titlebackground);
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "JetBrains Mono", monospace;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #000000;
+    margin-top: 10px;
+}
+
+#LoginButton:hover {
+    background-color: #b8d41f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#LoginButton:active {
+    transform: translateY(0);
+}
