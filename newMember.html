@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="css\newMember.css">
+		<script>
+			function validateUser(){
+			var x=document.forms["userForm"]["User"].value;
+				if (x==null || x==""){
+					document.getElementById('errorUser').innerHTML = 'Please enter a username';
+				}
+				else{
+					document.getElementById('errorUser').innerHTML = '';
+				}
+			}
+			
+			function validatePass(){
+			var x=document.forms["userForm"]["Pass"].value;
+				if (x==null || x==""){
+					document.getElementById('errorPassword').innerHTML = 'Please enter a password.';
+				}
+				else{
+					document.getElementById('errorPassword').innerHTML = '';
+				}
+			}
+			
+			function validateEmail(){
+			var x=document.forms["userForm"]["Email"].value;
+			var atpos=x.indexOf("@");
+			var dotpos=x.lastIndexOf(".");
+				if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){
+					document.getElementById('errorEmail').innerHTML = 'Please enter a valid email address.';
+					}
+				else{
+					document.getElementById('errorEmail').innerHTML = '';
+				}
+			}
+		</script>
+	</head>
+	<body>
+
+		<div class="memberform">
+		<form action="newMember.php" method="post" name="userForm">
+
+			<table>
+
+			<tr>
+    		     <td>Username:</td><td><input type="text" name="User" onblur="validateUser();"><div id="errorUser" style="color: red;"></div></td>
+    		 </tr>
+
+   		<tr>
+<td>Password:</td><td><input type="password" name="Pass" onblur="validatePass();"><div id="errorPassword" style="color: red;"></div></td>
+		</tr>
+
+			</table>
+			
+			<div class="submit">
+            	<input type="submit" name="submit" value="Submit">
+			</div>
+		</form>
+
+</div>
+	</body>
+</html>
