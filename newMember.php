@@ -42,7 +42,6 @@ if (!mysqli_query($con, $query)) {
 
 mysqli_close($con);
 
-echo "New user, $myusername, successfully added.<br>";
-echo "newMember.htmlAdd another user</a><br>";
-echo "dashboard.phpGo to Dashboard</a>";
+header("Location: index.html");
+exit;
 ?>
