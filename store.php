@@ -9,7 +9,7 @@ if(!isset($_SESSION['myusername'])){
 
 require_once "db_con.php";
 
-$sql = "SELECT Stock_ID, Name, Description, Cost, Image, Alt_text 
+$sql = "SELECT Stock_ID, Name, Description, Cost, QTY, Image, Alt_text 
         FROM STOCK357";
 
 $stmt = $pdo->prepare($sql);
@@ -31,7 +31,7 @@ $stock = $stmt->fetchAll();
     <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="event.php">Events</a></li>
-    <li><a href="store.php">Store</a></li></li>
+    <li><a href="store.php">Store</a></li>
     </ul>
 </div>
 
@@ -46,6 +46,7 @@ $stock = $stmt->fetchAll();
                     <th>Name</th>
                     <th>Description</th>
                     <th>Cost (£)</th>
+                    <th>QTY</th>
                     <th>Image</th>
                 </tr>
             </thead>
@@ -56,6 +57,7 @@ $stock = $stmt->fetchAll();
                         <td><?= htmlspecialchars($item['Name']) ?></td>
                         <td><?= htmlspecialchars($item['Description']) ?></td>
                         <td><?= number_format($item['Cost'], 2) ?></td>
+                        <td><?= htmlspecialchars($item['QTY']) ?></td>
                         <td>
                             <img src="<?= htmlspecialchars($item['Image']) ?>"
                                  alt="<?= htmlspecialchars($item['Alt_text']) ?>">
