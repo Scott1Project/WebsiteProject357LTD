@@ -115,7 +115,7 @@ $stock = $stmt->fetchAll();
             </tbody>
 
         </table>
-
+<!-- css only works for this button when in the same file don't know why -->
         <button type="submit" id="OrderButton"
         style="
             padding: 12px 32px;
@@ -128,6 +128,7 @@ $stock = $stmt->fetchAll();
             cursor: pointer;
             color: #000000;
             margin-top: 10px;
+            margin-left: 75px;
         ">
         Submit Order
         </button>
