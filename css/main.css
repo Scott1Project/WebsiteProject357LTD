@@ -130,7 +130,7 @@ body{
 }
 
 .stock-table{
-    width: 85%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--tablecolour1);
