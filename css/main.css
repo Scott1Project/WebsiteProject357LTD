@@ -2,14 +2,14 @@
 :root {
   --bodycolour: #353535;
   --boxcolour: #ececec;
-  --titlebackground: #c4e824;
+  --titlebackground: #3ba194;
   --titletextcolour: #000000;
   --border-radius: 30px;
-  --loginboxcolour: #c4e824;
+  --loginboxcolour: #3ba194;
   --loginbuttonheight: 40px;
-  --tablecolour1: #a3c723;
-  --tablecolour2: #c4e824;
-  --navbarcolour1: #c4e824;
+  --tablecolour1: #308f82;
+  --tablecolour2: #3ba194;
+  --navbarcolour1: #308f82;
   --navbarcolour2: #ececec;
 
 }
@@ -18,7 +18,7 @@
 .navbar img{
     max-width: 300px;
     display: block;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius) 0px 0px 0px;
 }
 
 .navbar{
@@ -179,7 +179,7 @@ body{
 
 
 .loginmenu{
-    background-color: #a3c723;
+    background-color: #3ba194;
     width: 85%;
     margin-top: 20px;
     margin-left: auto;
@@ -213,7 +213,7 @@ body{
 }
 
 .loginmenu button:hover{
-    background-color: rgb(218, 241, 10);
+    background-color: #3ba194;
 }
 
 .events-container{
@@ -229,7 +229,7 @@ border-radius: var(--border-radius);
     font-weight: 400;
     font-size: 16px;
     text-align: center;
-    background-color: #a3c723;
+    background-color: #3ba194;
     width: 100%;
 }
 
@@ -279,7 +279,7 @@ border-radius: var(--border-radius);
 .loginbox input[type="text"],
 .loginbox input[type="password"] {
     padding: 12px 15px;
-    border: 2px solid #a3c723;
+    border: 2px solid #3ba194;
     border-radius: 15px;
     font-size: 16px;
     font-family: "JetBrains Mono", monospace;
@@ -308,7 +308,7 @@ border-radius: var(--border-radius);
 }
 
 #LoginButton:hover {
-    background-color: #b8d41f;
+    background-color: #3ba194;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
