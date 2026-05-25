@@ -3,9 +3,6 @@
 <head>
     <script src="login.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/login.css">
-	<link rel="stylesheet" href="css/colors.css">
-	<link rel="stylesheet" href="css/title.css">
 </head>
 
 
