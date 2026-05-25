@@ -2,7 +2,8 @@
 require_once "db_con.php";
 
 $sql = "SELECT Event_Title, Event_Description, Event_Image, Event_AltText, Event_Date 
-        FROM EVENTS357";
+        FROM EVENTS357
+        ORDER BY Event_Date DESC";
 
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
