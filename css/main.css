@@ -316,3 +316,38 @@ border-radius: var(--border-radius);
 #LoginButton:active {
     transform: translateY(0);
 }
+
+/* This is for medium devices - tablets, 768px and down */
+
+@media (max-width: 768px){
+    .navbar{
+        width: 95%;
+    }
+    .box{
+        width: 95%;
+    }
+    #title{
+        font-size: 36px;
+    }
+}
+
+/* This is for extra small devices - phones, 600px and down */
+@media only screen and (max-width: 600px) {
+
+    .navbar ul li{
+        float: none;
+    }
+    .navbar ul li a{
+        font-size: 14px;
+    }
+    #title{
+        font-size: 28px;
+    }
+    .loginmenu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .loginmenu a{
+        width: 80%;
+    }
+}
